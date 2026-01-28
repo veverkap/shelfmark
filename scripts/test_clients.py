@@ -468,7 +468,7 @@ def test_rtorrent():
         torrent_list = client.d.multicall.filtered(
             "",
             "default",
-            f"equal=d.hash=,cat={torrent_id}",
+            f"equal={{d.hash=,cat={torrent_id}}}"
             "d.hash=",
             "d.state=",
             "d.completed_bytes=",
